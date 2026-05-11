@@ -146,10 +146,16 @@ transform:translateY(-4px);
 
 .hero-image img{
 width:380px;
+height:500px;
+object-fit:cover;
 border-radius:30px;
 border:4px solid #ff2ea6;
 box-shadow:0 0 40px #ff2ea688;
+transition:0.4s;
 }
+  .hero-image img:hover{
+    transform:scale(1.03);
+  }
 
 /* SERVICES */
 
@@ -291,17 +297,17 @@ Alien <span>Beauty</span>
 </div>
 
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#conctact">Contact</a></li>
 </ul>
 
 </nav>
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="hero-text">
 
@@ -335,7 +341,7 @@ View Styles
 
 <!-- SERVICES -->
 
-<section class="section">
+<section class="section" id="services">
 
 <h2 class="section-title">
 Our <span>Services</span>
@@ -382,7 +388,7 @@ Braids <span>Gallery</span>
 
 <!-- CONTACT -->
 
-<section class="section">
+<section class="section" id="contact">
 
 <div class="contact-box">
 
